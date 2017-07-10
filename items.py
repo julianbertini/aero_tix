@@ -8,7 +8,10 @@
 import scrapy
 
 
-class AeroTixItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Ticket(scrapy.Item):
+    price = scrapy.Field()
+    departure_time = scrapy.Field()
+    arrival_time = scrapy.Field()
+    is_nonstop = scrapy.Field()
+    airline = scrappy.Field()
+    
